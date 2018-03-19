@@ -23,6 +23,7 @@ workflows:
   build-deploy:
     jobs:
       - build:
+          context: docker publish
           filters:
             tags:
               only: /.*/
